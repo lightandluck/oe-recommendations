@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recommendations</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="buttons">
+      <button id="sort-numerical" class="active">Numerical</button>
+      <button id="sort-strategy">Strategy</button>
+      <button id="sort-tactics">Tactics</button>
+    </div>
+
+    <div class="sort-numerical" data-grid="grid">
+      <div data-order="0" data-strategy="vigilance" data-header="0">Vigilance</div>
+      <div data-order="0" data-strategy="radical" data-header="0">Radical</div>
+
+      <div data-order="0" data-tactics="internal" data-header="0">Internal</div>
+      <div data-order="0" data-tactics="external" data-header="0">External</div>
+      <div data-order="0" data-tactics="communication" data-header="0">Communication</div>
+
+      <div data-order="1" data-strategy="vigilance" data-tactics="external">RECOMMENDATION 1: Continue to ponder/savor/experiment with this and other potential purpose statements. As EDGI continues to further refine ways to work together (vis-à-vis organizational structure and governance) its purpose will come into clearer focus. 
+        </div>
+      <div data-order="2" data-strategy="radical" data-tactics="communication">RECOMMENDATION 2: Expand and deepen understanding of the legacy of structural racism for EDGI's membership (via an in-depth training). As an organization that strives to be anti-fascist, anti-racist, and anti-oppressive it will be key to be clear not just on what you’re fighting against, but what you are wholeheartedly investing in. 
+        </div>
+      <div data-order="3" data-strategy="radical" data-tactics="internal">RECOMMENDATION 3: While already recognized and desired, EDGI should develop a clear strategy and timeline of how to advance its theoretical work and joint visioning of socially just, alternative environmental data and governance structures. This should include a plan to develop, communicate, popularize, and build a coalition and momentum around, this alternative vision. EDGI may benefit from raising funds to hire an experienced political organizer. </div>
+      <div data-order="4" data-strategy="vigilance" data-tactics="external">RECOMMENDATION 4: Because networking, coalition-building and partnering is part of every future scenario, EDGI should build its organizational capacity for communication and engagement (see below), so that it has the capability to make these connections. 
+        </div>
+      <div data-order="5" data-strategy="radical" data-tactics="communication">RECOMMENDATION 5: While EDGI envisions working more closely at the state-level under almost all scenarios, such a shift should be carefully considered, critically assessed and – if agreed upon – strategically planned. Strategizing with other environmental policy NGOs, environmental policy historians, government accountability groups and others might be the best first step. </div>
+      <div data-order="6" data-strategy="vigilance" data-tactics="communication">RECOMMENDATION 6: Once EDGI collectively decides on its purpose, individual working groups should work toward “owning” it by working with other WG members (not attending the Toronto meeting) through its implications using the future scenario and working group lenses. They work well to explore possibilities for shifts in focus or emphasis and to deepen understanding of the opportunities and benefits of greater cross-WG interactions. </div>
+      <div data-order="7" data-strategy="radical" data-tactics="internal">RECOMMENDATION 7: Consider doing away with the label ‘Steering Committee’ as this does not reflect what EDGI is or aspires to be. This label was concerning for several people interviewed in that it perpetuates a sense of ‘power over.’ As an alternative, we recommend the refinement of the term ‘member’ and replacing the concept of a ‘steering committee’ with that of a ‘strategic coordination committee’ to refer to those people most actively involved in setting strategic direction and fulfilling EDGI’s purpose.</div>
+      <div data-order="8" data-strategy="vigilance" data-tactics="internal">text</div>
+
+    </div>
+    <script src="script.js"></script>  
+    <script src="https://unpkg.com/animate-css-grid@latest"></script>
+    <script>
+      animateCSSGrid.wrapGrid(wrapper, {duration : 400});
+    </script>
+  </body>
+</html>
