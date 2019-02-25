@@ -1,13 +1,16 @@
 body {
-  background-color: rgba(20, 20, 20, 1);
+  background-color: rgba(60, 60, 60, 1);
 }
 
+a {
+  color: #beeeff;
+}
 .buttons {
   margin-bottom: 10px;
 }
 
 button {
-  border: 2px solid black;
+  border: 1px solid black;
   background-color: white;
   color: black;
   padding: 10px 20px;
@@ -16,7 +19,7 @@ button {
 }
 
 .active {
-  background-color: green;
+  background-color: rgba(8, 240, 9, 0.7)
 }
 
 [data-grid="grid"] {
@@ -33,13 +36,13 @@ button {
 }
 
 .sort-numerical {
-  grid-template-columns: 50%;
+  grid-template-columns: minmax(50%, 700px);
 }
 .sort-strategy {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
 }
 .sort-tactics {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: epeat(6, minmax(300px, 1fr));
 }
 
 [data-order] {
@@ -47,7 +50,8 @@ button {
   border-radius: 2px;
   padding: 1em;
   color: #e7e7e7;
-  font-family: "Abel", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Work Sans", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
 }
 
 [data-header] {
@@ -69,27 +73,59 @@ button {
   display: block;
 }
 
-.sort-strategy > [data-strategy="vigilance"] {
+.sort-strategy > [data-strategy="communication"] {
   background-color: rgba(200,200,0,.5);
   grid-column: 1/2;
 }
 
-.sort-strategy > [data-strategy="radical"] {
-  background-color: rgba(200,0,0,.5);
+.sort-strategy > [data-strategy="visioning"] {
+  background-color: rgba(0,200,0,.5);
   grid-column: 2/3;
 }
 
-.sort-tactics > [data-tactics="internal"] {
+.sort-strategy > [data-strategy="radical"] {
+  background-color: rgba(0,0,200,.5);
+  grid-column: 3/4;
+}
+
+.sort-strategy > [data-strategy="vigilance"] {
+  background-color: rgba(200,0,0,.5);
+  grid-column: 4/5;
+}
+
+/* Tactics */
+
+.sort-tactics > [data-tactics="effectiveness"] {
   background-color: rgba(200,100,0,.5);
   grid-column: 1/2;
 }
 
-.sort-tactics > [data-tactics="external"] {
+.sort-tactics > [data-tactics="capacity"] {
   background-color: rgba(200,100,200,.5);
   grid-column: 2/3;
 }
 
-.sort-tactics > [data-tactics="communication"] {
+.sort-tactics > [data-tactics="politics"] {
   background-color: rgba(0,100,200,.5);
   grid-column: 3/4;
+}
+
+.sort-tactics > [data-tactics="practices"] {
+  background-color: rgba(0,200,200,.5);
+  grid-column: 4/5;
+}
+
+.sort-tactics > [data-tactics="structure"] {
+  background-color: rgba(20,100,100,.5);
+  grid-column: 5/6;
+}
+
+.sort-tactics > [data-tactics="partnering"] {
+  background-color: rgba(0,10,250,.5);
+  grid-column: 6/7;
+}
+
+.sort-tactics > [data-tactics="goals"] {
+  background-color: rgba(100,100,200,.5);
+  grid-column: 7/8;
 }
