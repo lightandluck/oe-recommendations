@@ -42,7 +42,7 @@ button {
   grid-template-columns: repeat(4, minmax(300px, 1fr));
 }
 .sort-tactics {
-  grid-template-columns: epeat(6, minmax(300px, 1fr));
+  grid-template-columns: repeat(7, minmax(300px, 1fr));
 }
 
 [data-order] {
@@ -51,7 +51,7 @@ button {
   padding: 1em;
   color: #e7e7e7;
   font-family: "Work Sans", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 [data-header] {
