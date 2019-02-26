@@ -77,6 +77,10 @@ button {
   display: block;
 }
 
+.sort-strategy > [data-clone="tactics"] {
+  display: none;
+}
+
 .sort-strategy > [data-strategy="communication"] {
   background-color: rgba(200,200,0,.5);
   grid-column: 1/2;
@@ -98,6 +102,10 @@ button {
 }
 
 /* Tactics */
+
+.sort-tactics > [data-clone="strategy"] {
+  display: none;
+}
 
 .sort-tactics > [data-tactics="effectiveness"] {
   background-color: rgba(200,100,0,.5);
